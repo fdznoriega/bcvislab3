@@ -1,0 +1,21 @@
+
+html {
+    background-color: rgb(70, 70, 70);
+}
+h2, .city-count, .population-plot {
+    text-align: center;
+}
+
+text, td, h2, h4, span, .city-labels, .city-count {
+    color: rgb(230, 230, 230);
+    fill:  rgb(230, 230, 230);
+}
+
+.population-plot {
+    border: 3px solid orange;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 5%;
+}

@@ -52,7 +52,7 @@ function createScatterplot() {
                 return 8;
             }
         })
-        .attr("fill", "teal");
+        .attr("fill", "orange")
 
     // add labels by MAKING NEW ELEMENTS not children
     svg.selectAll(".city-labels")
