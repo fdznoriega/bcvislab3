@@ -30,6 +30,35 @@ function createBarChart() {
         .enter()
         .append('rect')
         .attr('class', 'bar')
+        // add an event listener
+        .on('click', (event, building) => {
+            // update the table (height, city, country, floors, completed)
+            console.log(event);
+            console.log(building);
+
+            // update the picture
+            d3.select('.image')
+                .attr('src', `img/${building.image}`)
+            
+            // .building-name
+            d3.select('.building-name')
+                .text(building.building);
+            // .height
+            d3.select('.height')
+                .text(building.height_ft);
+            // .city
+            d3.select('.city')
+                .text(building.city);
+            // .country
+            d3.select('.country')
+                .text(building.country);
+            // .floors
+            d3.select('.floors')
+                .text(building.floors);
+            // .completed
+            d3.select('.completed')
+                .text(building.completed)
+        })
         .attr('width', building => building.height_px)
         .attr('height', barHeight)
         .attr('x', barHeightOffset)
