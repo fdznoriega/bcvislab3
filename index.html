@@ -18,8 +18,8 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
 
     <!-- Your code -->
-    <script defer src="js/buildings.js"></script>
     <script defer src="js/cities.js"></script>
+    <script defer src="js/buildings.js"></script>
 
     
   </head>
@@ -27,11 +27,51 @@
     
     <!-- Container to hold vis -->
     <div class="container">
-        <h1>Hello World</h1>
         <h2>Population in European Cities</h2>
         <!-- Future D3 Containers below -->
         <div class="city-count"></div>
         <div class="population-plot"></div>
+    </div>
+
+    <div class="container">
+      <h2>World's Tallest Buildings</h2>
+      <div class="row">
+        <div class="building-bar-chart"></div>
+        <div class="column">
+          <img class="image" src='img/1.jpg' />
+        </div>
+        <div class="column">
+          <h4 class="building-name"></h4>
+          <table>
+            <tbody>
+              <tr>
+                <td>Height</td>
+                <td><span class="height"></span> ft</td>
+              </tr>
+              <tr>
+                <td>City</td>
+                <td><span class="city"></span></td>
+              </tr>
+              <tr>
+                <td>Country</td>
+                <td><span class="country"></span></td>
+              </tr>
+              <tr>
+                <td>Floors</td>
+                <td><span class="floors"></span></td>
+              </tr>
+              <tr>
+                <td>Completed</td>
+                <td><span class="completed"></span></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+      
     </div>
 
    

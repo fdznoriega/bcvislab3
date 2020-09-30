@@ -7,7 +7,7 @@ d3.csv('cities.csv', d3.autoType)
     .then(data => {
         cities = data;
         europeanCities = cities.filter(onlyEuropeanCities);
-        generateScatterplot();
+        createScatterplot();
     })
 
 // include only European cities
@@ -17,7 +17,7 @@ function onlyEuropeanCities(city) {
     }
 }
 
-function generateScatterplot() {
+function createScatterplot() {
     // Print out data
     // console.log('Cities', cities);
     // console.log('EU cities', europeanCities);
